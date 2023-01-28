@@ -1,0 +1,90 @@
+
+// À DÉPLACER DANS LE FICHIER VARIABLE
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-bg-town: #EAEAEA;
+$color-bg-sections: #F8F7F7;
+
+$logo-size: 10rem;
+
+// img{
+//     filter: invert(100%);
+// }
+body{
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    &:visited{
+        color: #000;
+    }
+}
+
+
+
+h1, p, ::placeholder{
+    font-family: roboto;
+    margin: 0;
+}
+
+
+header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & i{
+        font-size: 1.5rem;
+        position: absolute;
+        left: 1.2rem;
+        top: 1.2rem;
+    }
+    & img{
+        display: block;
+        width: $logo-size;
+        justify-self: center;
+    }
+}
+
+.input-town{
+    background-color: $color-bg-town;
+    height: 3rem;
+    border: 0px;
+    width: 100%;
+    &::placeholder{
+        text-align: center;
+    }
+}
+
+.presentation{
+    background-color: $color-bg-sections;
+    // height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0;
+
+    & h1{
+        padding: 0 2.5rem 1rem 2.5rem;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    & p{
+        text-align: center;
+        font-weight: 200;
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
+.btn-purple{
+    text-align: center;
+    padding: .8rem 1rem;
+    color: #fff;
+    border-width: 0;
+    margin-top: 2rem;
+    background: linear-gradient(355deg, $color-primary 35%, $color-secondary 100%);
+    border-radius: 30px;
+    
+}
