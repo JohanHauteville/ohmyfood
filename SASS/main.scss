@@ -17,6 +17,7 @@ body{
 
 a {
     text-decoration: none;
+    color: #000;
     &:visited{
         color: #000;
     }
@@ -24,7 +25,7 @@ a {
 
 
 
-h1, p, ::placeholder{
+h1,h2, p, ::placeholder{
     font-family: roboto;
     margin: 0;
 }
@@ -50,9 +51,10 @@ header {
 
 .input-town{
     background-color: $color-bg-town;
-    height: 3rem;
+    height: 2.8rem;
     border: 0px;
     width: 100%;
+    box-shadow: inset -2px 5px 10px -8px rgba(0,0,0,0.45);
     &::placeholder{
         text-align: center;
     }
@@ -60,12 +62,10 @@ header {
 
 .presentation{
     background-color: $color-bg-sections;
-    // height: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 0;
-
     & h1{
         padding: 0 2.5rem 1rem 2.5rem;
         text-align: center;
@@ -78,6 +78,7 @@ header {
         padding: 0 1rem;
     }
 }
+
 .btn-purple{
     text-align: center;
     padding: .8rem 1rem;
@@ -86,5 +87,31 @@ header {
     margin-top: 2rem;
     background: linear-gradient(355deg, $color-primary 35%, $color-secondary 100%);
     border-radius: 30px;
-    
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    transition: opacity 300ms ease-in-out;
+    &:hover{
+        opacity: 0.8;
+    } 
+}
+
+.card-fct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-bg-sections;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    height: 3rem;
+    width: 80%;
+
+    &__num{
+
+    }
+    &__icon{
+        color: $color-primary;
+    }
+    &__txt{
+
+    }
+
 }

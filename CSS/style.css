@@ -4,12 +4,13 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 a:visited {
   color: #000;
 }
 
-h1, p, ::placeholder {
+h1, h2, p, ::placeholder {
   font-family: roboto;
   margin: 0;
 }
@@ -34,9 +35,10 @@ header img {
 
 .input-town {
   background-color: #EAEAEA;
-  height: 3rem;
+  height: 2.8rem;
   border: 0px;
   width: 100%;
+  box-shadow: inset -2px 5px 10px -8px rgba(0, 0, 0, 0.45);
 }
 .input-town::placeholder {
   text-align: center;
@@ -69,6 +71,25 @@ header img {
   margin-top: 2rem;
   background: linear-gradient(355deg, #9356DC 35%, #FF79DA 100%);
   border-radius: 30px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  transition: opacity 300ms ease-in-out;
+}
+.btn-purple:hover {
+  opacity: 0.8;
+}
+
+.card-fct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F7F7;
+  border-radius: 15px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  height: 3rem;
+  width: 80%;
+}
+.card-fct__icon {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
