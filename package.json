@@ -1,0 +1,21 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SASS/main.scss:./CSS/style.css",
+    "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohanHauteville/ohmyfood.git"
+  },
+  "author": "Johan Hauteville",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/JohanHauteville/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/JohanHauteville/ohmyfood#readme"
+}
