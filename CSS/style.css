@@ -10,7 +10,7 @@ a:visited {
   color: #000;
 }
 
-h1, h2, p, ::placeholder {
+h1, h2, span, p, ::placeholder {
   font-family: roboto;
   margin: 0;
 }
@@ -33,15 +33,18 @@ header img {
   justify-self: center;
 }
 
-.input-town {
+.town {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #EAEAEA;
   height: 2.8rem;
-  border: 0px;
   width: 100%;
   box-shadow: inset -2px 5px 10px -8px rgba(0, 0, 0, 0.45);
-}
-.input-town::placeholder {
   text-align: center;
+}
+.town i {
+  margin-right: 20px;
 }
 
 .presentation {
@@ -72,24 +75,59 @@ header img {
   background: linear-gradient(355deg, #9356DC 35%, #FF79DA 100%);
   border-radius: 30px;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
-  transition: opacity 300ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .btn-purple:hover {
   opacity: 0.8;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3137254902);
+}
+
+.fct {
+  padding: 3rem 2rem 0 2rem;
+}
+.fct h2 {
+  margin-bottom: 2rem;
+}
+.fct__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .card-fct {
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #F8F7F7;
   border-radius: 15px;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
-  height: 3rem;
-  width: 80%;
+  height: 4rem;
+  width: 95%;
+  margin-bottom: 2rem;
+  transition: background-color 200ms ease-in-out;
+}
+.card-fct__num {
+  position: relative;
+  right: 0.8rem;
+  margin-right: 1.4rem;
+  background-color: #9356DC;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 30px;
 }
 .card-fct__icon {
   color: #9356DC;
+  position: relative;
+  right: 0.8rem;
+  margin-right: 1.4rem;
+}
+.card-fct__txt {
+  position: relative;
+  right: 0.8rem;
+  margin-right: 1.4rem;
+}
+.card-fct:hover {
+  background-color: #eee7f4;
 }
 
 /*# sourceMappingURL=style.css.map */
