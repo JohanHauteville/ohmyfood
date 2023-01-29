@@ -5,6 +5,7 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-bg-town: #EAEAEA;
 $color-bg-sections: #F8F7F7;
+$color-bg-footer: #353535;
 
 $logo-size: 10rem;
 $left-val-icon: 29vw;
@@ -31,7 +32,9 @@ a {
     }
 }
 
-h1,h2,span,p, ::placeholder{
+// h1,h2,span,p, ::placeholder
+
+* {
     font-family: roboto;
     margin: 0;
 }
@@ -146,5 +149,37 @@ header {
     }
     &:hover{
         background-color: mix($color-bg-sections, $color-primary, $weight: 90%); 
+    }
+}
+
+
+
+
+
+
+footer{
+    background-color: $color-bg-footer; 
+    color: #fff;
+    padding: 1.5rem;
+    
+    & p{
+        font-family: Shrikhand;
+    }
+    & ul{
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 1rem;
+        & li{
+            font-size: .8rem;
+            margin-top: .5rem;
+        }
+        & i{
+            font-size: .7rem;
+            margin-right: .8rem;
+            max-width: .4rem;
+        }
+        & .footer-link {
+            color: #fff;
+        }
     }
 }
