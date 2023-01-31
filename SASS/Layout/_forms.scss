@@ -1,0 +1,15 @@
+
+
+.town{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-bg-town;
+    height: 2.8rem;
+    width: 100%;
+    box-shadow: inset -2px 5px 10px -8px rgba(0,0,0,0.45);
+    text-align: center;
+    & i{
+        margin-right: 20px;
+    }
+}

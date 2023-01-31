@@ -1,0 +1,101 @@
+
+
+
+
+.fct{
+    @include section;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+
+.card-fct{
+    display: flex;
+    align-items: center;
+    background-color: $color-bg-sections;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    height: 4rem;
+    width: 95%;
+    margin-bottom: 2rem;
+    transition: background-color 200ms ease-in-out;
+    &__num{
+        @include pos-elem-card-fct;
+        background-color: $color-primary;
+        color: #fff;
+        font-size: .9rem;
+        padding: .2rem .5rem;
+        border-radius: 30px;
+    }
+    &__icon{
+        color: $color-primary;
+        @include pos-elem-card-fct;
+    }
+    &__txt{
+        @include pos-elem-card-fct;
+    }
+    &:hover{
+        background-color: mix($color-bg-sections, $color-primary, $weight: 90%); 
+    }
+}
+
+
+.rest{
+    @include section;
+    &__list{
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        display: grid;
+    }
+}
+
+.card-rest{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    
+    &__new{
+        display: none;
+        &--actived{
+            float: right;
+            margin-left: -5.4rem;
+            margin-top: 1rem;
+            position: absolute;
+            padding: .3rem .7rem;
+            background-color: $color-tertiary;
+            color: darken($color-tertiary, 40%);
+            font-size: .8rem;
+            display: inherit;
+            
+        }
+    }
+    &__img{
+        z-index: 1;
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+    }
+    &__cont-txt{
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &__txt{
+            margin: 0;
+            padding: .6rem .8rem .8rem .8rem;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.4rem;
+            font-size: .9rem;
+            // height: 3rem;
+        } 
+    }
+
+
+}

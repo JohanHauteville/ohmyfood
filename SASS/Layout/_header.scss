@@ -1,0 +1,19 @@
+
+
+header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & i{
+        font-size: 1.5rem;
+        position: absolute;
+        left: 1.2rem;
+        top: 1.2rem;
+    }
+    & img{
+        display: block;
+        width: $logo-size;
+        justify-self: center;
+    }
+}

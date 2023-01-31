@@ -1,0 +1,14 @@
+@mixin pos-elem-card-fct {
+    position: relative;
+    right: $pos-elem-card-fct;
+    margin-right: $po-elem-card-fct-space;
+}
+@mixin section{
+    padding: 3rem 2rem 2rem 2rem;
+    & h2{
+        margin-bottom: 1.6rem;
+    }
+    &--bg-section{
+        background-color: $color-bg-sections;
+    }
+}
