@@ -117,6 +117,22 @@ header img {
   margin-right: 20px;
 }
 
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked + .card-menu .card-menu__container {
+  grid-template-columns: 70% 10% 18%;
+}
+input[type=radio]:checked + .card-menu .card-menu__check i {
+  transform: rotate(1turn);
+}
+input[type=radio]:hover + .card-menu .card-menu__container {
+  grid-template-columns: 70% 10% 18%;
+}
+input[type=radio]:hover + .card-menu .card-menu__check i {
+  transform: rotate(1turn);
+}
+
 .fct {
   padding: 3rem 2rem 2rem 2rem;
 }
@@ -226,7 +242,6 @@ header img {
 .menu {
   background-color: #F8F7F7;
   border-radius: 40px 40px 0 0;
-  height: 800px;
   margin-top: -3rem;
   padding: 1rem 1rem 1rem 1rem;
 }
@@ -240,67 +255,68 @@ header img {
   font-size: 1.7rem;
 }
 
-.entrees h2 {
+.menu-section {
+  margin: 1.5rem 0 2rem 0;
+}
+.menu-section h2 {
+  margin-bottom: 1rem;
   display: block;
   font-size: 1rem;
   font-weight: 400;
 }
-.entrees h2::after {
+.menu-section h2::after {
   content: "";
-  width: 2rem;
+  display: block;
+  width: 2.5rem;
+  margin-top: 0.3rem;
   border-bottom: 2px solid #99E2D0;
-  border-width: 2rem;
 }
 
-.card-entrees {
-  outline: none;
-  border: 0;
+.card-menu {
+  display: block;
   background-color: #F8F7F7;
   width: 100%;
   text-align: left;
+  transition: all 0.5s;
+  margin-bottom: 1rem;
 }
-.card-entrees__container {
+.card-menu__container {
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
   background-color: #fff;
   border-radius: 15px;
   padding: 0.5rem 0 0.5rem 1rem;
   display: grid;
   grid-template-columns: 80% 20% 0%;
+  justify-content: space-between;
   overflow: hidden;
   transition: all 0.5s;
-  justify-content: space-between;
 }
-.card-entrees__container:hover, .card-entrees__container:active {
-  grid-template-columns: 70% 10% 18%;
-}
-.card-entrees__container:hover .card-entrees__check i, .card-entrees__container:active .card-entrees__check i {
-  transform: rotate(1turn);
-}
-.card-entrees__txt {
+.card-menu__txt {
   line-height: 1.3rem;
   display: block;
 }
-.card-entrees__txt h3 {
+.card-menu__txt h3 {
   display: block;
   text-overflow: ellipsis;
   font-size: 1rem;
   overflow: hidden;
   white-space: nowrap;
 }
-.card-entrees__txt p {
+.card-menu__txt p {
   overflow: hidden;
   white-space: nowrap;
   font-size: 0.85rem;
   text-overflow: ellipsis;
 }
-.card-entrees__price {
+.card-menu__price {
   align-self: flex-end;
   justify-self: center;
   padding-bottom: 0.2rem;
   text-align: center;
+  font-weight: 700;
   width: 2rem;
 }
-.card-entrees__check {
+.card-menu__check {
   min-width: 2.8rem;
   display: flex;
   align-items: center;
@@ -309,7 +325,7 @@ header img {
   height: 150%;
   background-color: #99E2D0;
 }
-.card-entrees__check i {
+.card-menu__check i {
   color: #fff;
   font-size: 1.2rem;
   transform: rotate(0turn);

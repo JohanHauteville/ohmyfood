@@ -104,7 +104,7 @@
 .menu{
     background-color: $color-bg-sections;
     border-radius: 40px 40px 0 0;
-    height: 800px;
+    // height: 800px;
     margin-top: -3rem;
     padding: 1rem 1rem 1rem 1rem;
     &__top{
@@ -119,26 +119,32 @@
     }
 }
 
-.entrees{
+.menu-section{
+    margin: 1.5rem 0 2rem 0;
     & h2{
+        margin-bottom: 1rem;
         display: block;
         font-size: 1rem;
         font-weight: 400;
         &::after{
             content: '';
-            width: 2rem;
+            display: block;
+            width: 2.5rem;
+            margin-top: .3rem;
             border-bottom: 2px solid $color-tertiary ;
-            border-width: 2rem;
+            
         }
     }
+
 }
 
-.card-entrees{
-    outline: none;
-    border: 0;
+.card-menu{
+    display: block;
     background-color: $color-bg-sections;
     width: 100%;
     text-align: left;
+    transition: all .5s;
+    margin-bottom: 1rem;
 
     &__container{
         box-shadow: 0px 3px 15px 0px #0000001A;
@@ -147,16 +153,9 @@
         padding: .5rem 0 .5rem 1rem;
         display: grid;
         grid-template-columns: 80% 20% 0%;
-        
+        justify-content: space-between;
         overflow: hidden;
         transition: all .5s;
-        justify-content: space-between;
-        &:hover,&:active{
-            grid-template-columns: 70% 10% 18%;
-            .card-entrees__check i{
-                transform: rotate(1turn);
-            }
-        }
     }
     &__txt{
         line-height: 1.3rem;
@@ -172,6 +171,7 @@
         & p{
             overflow: hidden;
             white-space: nowrap;
+            
             font-size: .85rem;
             text-overflow: ellipsis ;
         }
@@ -181,6 +181,7 @@
         justify-self: center;
         padding-bottom: .2rem;
         text-align: center;
+        font-weight: 700;
         width: 2rem;
     }
     &__check{
@@ -199,5 +200,5 @@
         height: 150%;
         background-color: $color-tertiary;
     }
-
 }
+
