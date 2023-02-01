@@ -252,37 +252,68 @@ header img {
   border-width: 2rem;
 }
 
+.card-entrees {
+  outline: none;
+  border: 0;
+  background-color: #F8F7F7;
+  width: 100%;
+  text-align: left;
+}
 .card-entrees__container {
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
   background-color: #fff;
   border-radius: 15px;
-  padding: 0.5rem;
-  display: flex;
+  padding: 0.5rem 0 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 80% 20% 0%;
+  overflow: hidden;
+  transition: all 0.5s;
   justify-content: space-between;
 }
+.card-entrees__container:hover {
+  grid-template-columns: 70% 10% 18%;
+}
+.card-entrees__container:hover .card-entrees__check i {
+  transform: rotate(1turn);
+}
 .card-entrees__txt {
-  text-overflow: ellipsis;
   line-height: 1.3rem;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100px;
+  display: block;
 }
 .card-entrees__txt h3 {
+  display: block;
   text-overflow: ellipsis;
   font-size: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card-entrees__txt p {
-  font-size: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  text-overflow: ellipsis;
 }
 .card-entrees__price {
   align-self: flex-end;
-  width: 3rem;
+  justify-self: center;
+  padding-bottom: 0.2rem;
+  text-align: center;
+  width: 2rem;
 }
 .card-entrees__check {
-  position: absolute;
-  height: 100%;
+  min-width: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.5rem;
+  height: 150%;
   background-color: #99E2D0;
+}
+.card-entrees__check i {
+  color: #fff;
+  font-size: 1.2rem;
+  transform: rotate(0turn);
+  transition: all 0.5s;
 }
 
 footer {

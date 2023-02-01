@@ -134,40 +134,69 @@
 }
 
 .card-entrees{
+    outline: none;
+    border: 0;
+    background-color: $color-bg-sections;
+    width: 100%;
+    text-align: left;
+    
     &__container{
-       
         box-shadow: 0px 3px 15px 0px #0000001A;
         background-color: #fff;
         border-radius: 15px;
-        padding: .5rem;
-        display: flex;
+        padding: .5rem 0 .5rem 1rem;
+        display: grid;
+        grid-template-columns: 80% 20% 0%;
+        
+        overflow: hidden;
+        transition: all .5s;
         justify-content: space-between;
-        // height: 3rem;
+        &:hover{
+            grid-template-columns: 70% 10% 18%;
+            .card-entrees__check i{
+                transform: rotate(1turn);
+            }
+        }
     }
     &__txt{
-        text-overflow: ellipsis;
         line-height: 1.3rem;
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 100px;
-            
+        display: block; 
         & h3{
-            text-overflow: ellipsis;
+            display: block;
+            text-overflow: ellipsis ;
             font-size: 1rem;
+            overflow: hidden;
+            white-space: nowrap;
             
         }
         & p{
-            font-size: .8rem;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: .85rem;
+            text-overflow: ellipsis ;
         }
     }
     &__price{
         align-self: flex-end;
-        width: 3rem;
+        justify-self: center;
+        padding-bottom: .2rem;
+        text-align: center;
+        width: 2rem;
     }
     &__check{
-        position: absolute;
-        height: 100%;
+        & i{
+            color: #fff;
+            font-size: 1.2rem;
+            // margin-left: 4vw;
+            transform: rotate(0turn) ;
+            transition: all .5s;
+        }  
+        min-width: 2.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -.5rem;
+        height: 150%;
         background-color: $color-tertiary;
     }
 
