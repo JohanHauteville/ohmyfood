@@ -270,10 +270,10 @@ header img {
   transition: all 0.5s;
   justify-content: space-between;
 }
-.card-entrees__container:hover {
+.card-entrees__container:hover, .card-entrees__container:active {
   grid-template-columns: 70% 10% 18%;
 }
-.card-entrees__container:hover .card-entrees__check i {
+.card-entrees__container:hover .card-entrees__check i, .card-entrees__container:active .card-entrees__check i {
   transform: rotate(1turn);
 }
 .card-entrees__txt {
