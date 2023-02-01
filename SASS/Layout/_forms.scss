@@ -25,6 +25,7 @@ input[type="radio"] {
         }
     } 
     &:hover + .card-menu{
+        cursor: pointer;
         .card-menu__container{
             grid-template-columns: 70% 10% 18%;  
         }
