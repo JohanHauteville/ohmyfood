@@ -2,11 +2,13 @@
 // À DÉPLACER DANS LE FICHIER VARIABLE
 @import "./Utils/variables";
 @import "./Utils/mixins";
+@import "./Utils/keyframes";
 
 @import "./Base/reset";
 @import "./Base/typography";
 
 @import "./Components/buttons";
+@import "./Components/loading";
 
 @import "./Layout/header";
 @import "./Layout/sliders";

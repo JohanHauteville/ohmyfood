@@ -1,0 +1,24 @@
+@keyframes menu-display{
+    0%{
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes loading-spinner {
+    70%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+        transform: scale(1)
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
