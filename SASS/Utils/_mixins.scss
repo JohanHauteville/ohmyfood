@@ -3,6 +3,11 @@
     right: $pos-elem-card-fct;
     margin-right: $po-elem-card-fct-space;
 }
+
+@mixin box-shadow{
+    box-shadow: 0px 3px 15px 0px $color-shadow;
+}
+
 @mixin section{
     padding: 3rem 2rem 2rem 2rem;
     & h2{

@@ -34,3 +34,24 @@ input[type="radio"] {
         }
     } 
 }
+
+// input[type="radio"] {
+//     display: none;
+//     &:checked + .card-menu{
+//         .card-menu__container{
+//             grid-template-columns: 70% 10% 18%;  
+//         }
+//         .card-menu__check i{
+//             transform: rotate(1turn);
+//         }
+//     } 
+//     &:hover + .card-menu{
+//         cursor: pointer;
+//         .card-menu__container{
+//             grid-template-columns: 70% 10% 18%;  
+//         }
+//         .card-menu__check i{
+//             transform: rotate(1turn);
+//         }
+//     } 
+// }

@@ -65,7 +65,7 @@ a:visited {
 }
 .btn-purple:hover {
   opacity: 0.8;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3137254902);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3333333333);
 }
 .btn-purple:visited {
   color: #fff;
@@ -212,11 +212,11 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   align-items: center;
   background-color: #F8F7F7;
   border-radius: 15px;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
   height: 4rem;
   width: 95%;
   margin-bottom: 2rem;
   transition: background-color 200ms ease-in-out;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .card-fct__num {
   position: relative;
@@ -245,13 +245,10 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
 
 #rest {
   background-color: #F8F7F7;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 1.4rem 2rem 1.4rem;
 }
 #rest h2 {
   margin-bottom: 1.6rem;
-}
-#rest--bg-section {
-  background-color: #F8F7F7;
 }
 #rest__list {
   display: grid;
@@ -263,6 +260,7 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 2rem;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .card-rest__new {
   display: none;
@@ -358,11 +356,19 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   background-color: #fff;
   border-radius: 15px;
   padding: 0.5rem 0 0.5rem 1rem;
+  margin-bottom: 1rem;
   display: grid;
   grid-template-columns: 80% 20% 0%;
   justify-content: space-between;
   overflow: hidden;
   transition: all 0.5s;
+}
+.card-menu__container:hover {
+  cursor: pointer;
+  grid-template-columns: 70% 10% 18%;
+}
+.card-menu__container:hover .card-menu__check i {
+  transform: rotate(1turn);
 }
 .card-menu__txt {
   line-height: 1.3rem;
