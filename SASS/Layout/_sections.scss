@@ -137,11 +137,19 @@
     margin-top: -3rem;
     padding: 1rem 1rem 1rem 1rem;
     &__top{
+        @include pad{
+            max-width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include desktop{
+            max-width: 74rem;
+        }
+
         & h1{
             font-family: Shrikhand;
             font-size: 1.7rem;
         }
-        
         display: flex;
         align-items: baseline;
         justify-content: space-between;
@@ -155,15 +163,15 @@
         }
         @include desktop{
             grid-template-columns: 1fr 1fr 1fr;
-            max-width: 70rem;
-            column-gap: 3rem;
+            max-width: 74rem;
+            column-gap: 3vw;
         }
     }
+    
 }
 
 .menu-section{
-    margin: 1.5rem 0 2rem 0;
-    
+    margin: 1.5rem 0 0 0;
     & h2{
         margin-bottom: 1rem;
         display: block;
