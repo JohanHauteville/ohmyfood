@@ -74,15 +74,14 @@
     &__list{
          display: grid;
          gap: 1rem;
+         margin: 0 auto 3rem auto;
          @include pad{
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
-            
          }
          @include desktop{
             grid-template-columns: 1fr 1fr 1fr 1fr;
             max-width: (map-get($breakpoints, pad )*2.2);
-            margin: 0 auto 3rem auto;
          }
     }
 }
@@ -147,10 +146,24 @@
         align-items: baseline;
         justify-content: space-between;
     }
+    &__grid{
+        display: grid;
+        @include pad{
+            max-width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include desktop{
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 70rem;
+            column-gap: 3rem;
+        }
+    }
 }
 
 .menu-section{
     margin: 1.5rem 0 2rem 0;
+    
     & h2{
         margin-bottom: 1rem;
         display: block;

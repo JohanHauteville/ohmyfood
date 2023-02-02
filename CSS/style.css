@@ -155,7 +155,7 @@ header img {
   position: relative;
   z-index: -1;
   width: 100%;
-  max-height: 30rem;
+  max-height: 20rem;
   object-fit: cover;
 }
 
@@ -277,6 +277,7 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
 #rest__list {
   display: grid;
   gap: 1rem;
+  margin: 0 auto 3rem auto;
 }
 @media screen and (min-width: 640px) {
   #rest__list {
@@ -288,7 +289,6 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   #rest__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1408px;
-    margin: 0 auto 3rem auto;
   }
 }
 
@@ -348,6 +348,23 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
 .menu__top h1 {
   font-family: Shrikhand;
   font-size: 1.7rem;
+}
+.menu__grid {
+  display: grid;
+}
+@media screen and (min-width: 640px) {
+  .menu__grid {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 70rem;
+    column-gap: 3rem;
+  }
 }
 
 .menu-section {
