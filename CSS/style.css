@@ -481,6 +481,7 @@ footer {
   background-color: #353535;
   color: #fff;
   padding: 1.5rem;
+  display: grid;
 }
 @media screen and (min-width: 640px) {
   footer {
