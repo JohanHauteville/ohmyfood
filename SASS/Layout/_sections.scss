@@ -43,13 +43,11 @@
 }
 
 
-.rest{
+#rest {
+    background-color: $color-bg-sections;
     @include section;
     &__list{
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        display: grid;
+         display: grid;
     }
 }
 
