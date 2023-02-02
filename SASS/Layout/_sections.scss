@@ -8,7 +8,18 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @include pad{
+            align-items: center;
+        }
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 70rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
+
 }
 
 
@@ -22,6 +33,17 @@
     margin-bottom: 2rem;
     transition: background-color 200ms ease-in-out;
     @include box-shadow;
+
+    @include pad{
+        max-width: 25rem;
+        
+    }
+
+    @include desktop{
+        max-width: 18rem;
+    }
+
+
     &__num{
         @include pos-elem-card-fct;
         background-color: $color-primary;
@@ -51,6 +73,17 @@
     }
     &__list{
          display: grid;
+         gap: 1rem;
+         @include pad{
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            
+         }
+         @include desktop{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            max-width: (map-get($breakpoints, pad )*2.2);
+            margin: 0 auto 3rem auto;
+         }
     }
 }
 
@@ -59,7 +92,6 @@
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
-    margin-bottom: 2rem;
     @include box-shadow;
     &__new{
         display: none;

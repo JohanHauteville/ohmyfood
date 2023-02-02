@@ -206,6 +206,20 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   flex-direction: column;
   align-items: flex-end;
 }
+@media screen and (min-width: 640px) {
+  .fct__list {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fct__list {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .card-fct {
   display: flex;
@@ -217,6 +231,16 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   margin-bottom: 2rem;
   transition: background-color 200ms ease-in-out;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
+}
+@media screen and (min-width: 640px) {
+  .card-fct {
+    max-width: 25rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-fct {
+    max-width: 18rem;
+  }
 }
 .card-fct__num {
   position: relative;
@@ -252,6 +276,20 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
 }
 #rest__list {
   display: grid;
+  gap: 1rem;
+}
+@media screen and (min-width: 640px) {
+  #rest__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #rest__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1408px;
+    margin: 0 auto 3rem auto;
+  }
 }
 
 .card-rest {
@@ -259,7 +297,6 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
-  margin-bottom: 2rem;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .card-rest__new {
@@ -415,6 +452,11 @@ footer {
   background-color: #353535;
   color: #fff;
   padding: 1.5rem;
+}
+@media screen and (min-width: 640px) {
+  footer {
+    text-align: center;
+  }
 }
 footer p {
   font-family: Shrikhand;

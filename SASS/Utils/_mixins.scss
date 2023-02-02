@@ -18,20 +18,20 @@
     }
 }
 
-@mixin mobile{
-    @media screen and (max-width: map-get($breakpoints , mobile)) {
-        @content;
-    }
-}
+// @mixin mobile{
+//     @media screen and (max-width: map-get($breakpoints , mobile)) {
+//         @content;
+//     }
+// }
 
 @mixin pad{
-    @media screen and (max-width: map-get($breakpoints , pad)) {
+    @media screen and (min-width: map-get($breakpoints , pad)) {
         @content;
     }
 }
 
 @mixin desktop{
-    @media screen and (max-width: map-get($breakpoints , desktop)) {
+    @media screen and (min-width: map-get($breakpoints , desktop)) {
         @content;
     }
 }

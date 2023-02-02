@@ -4,6 +4,9 @@ footer{
     background-color: $color-bg-footer; 
     color: #fff;
     padding: 1.5rem;
+    @include pad{
+        text-align: center;
+    }
     
     & p{
         font-family: Shrikhand;
