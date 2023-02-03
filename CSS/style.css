@@ -173,25 +173,6 @@ header img {
   margin-right: 20px;
 }
 
-input[type=radio] {
-  display: none;
-}
-input[type=radio]:checked + .card-menu .card-menu__container {
-  grid-template-columns: 70% 10% 18%;
-}
-input[type=radio]:checked + .card-menu .card-menu__check i {
-  transform: rotate(1turn);
-}
-input[type=radio]:hover + .card-menu {
-  cursor: pointer;
-}
-input[type=radio]:hover + .card-menu .card-menu__container {
-  grid-template-columns: 70% 10% 18%;
-}
-input[type=radio]:hover + .card-menu .card-menu__check i {
-  transform: rotate(1turn);
-}
-
 .fct {
   padding: 3rem 2rem 2rem 2rem;
 }
@@ -414,7 +395,6 @@ input[type=radio]:hover + .card-menu .card-menu__check i {
   background-color: #F8F7F7;
   width: 100%;
   text-align: left;
-  transition: all 0.5s;
   margin-bottom: 1rem;
 }
 .card-menu__container {

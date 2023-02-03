@@ -33,17 +33,12 @@
     margin-bottom: 2rem;
     transition: background-color 200ms ease-in-out;
     @include box-shadow;
-
     @include pad{
         max-width: 25rem;
-        
     }
-
     @include desktop{
         max-width: 18rem;
     }
-
-
     &__num{
         @include pos-elem-card-fct;
         background-color: $color-primary;
@@ -92,6 +87,7 @@
     border-radius: 15px;
     overflow: hidden;
     @include box-shadow;
+    //  ICONE NOUVEAU SUR LA CARD
     &__new{
         display: none;
         &--actived{
@@ -187,6 +183,7 @@
         }
     }
     animation: menu-display $anim-menu-duration backwards ease-out;
+    // ANIMATION AVEC POUR CHACUNE DES SECTIONS, UN DÉLAI QUI S'INCRÉMENTE
     @for $i from 1 through 4{
         &--#{$i}{
             animation-delay: $anim-menu-delay*$i;
@@ -200,7 +197,6 @@
     background-color: $color-bg-sections;
     width: 100%;
     text-align: left;
-    transition: all .5s;
     margin-bottom: 1rem;
     &__container{
         @include box-shadow;
@@ -212,10 +208,13 @@
         grid-template-columns: 80% 20% 0%;
         justify-content: space-between;
         overflow: hidden;
+        // ANIMATION TOTALE
         transition: all .5s;
         &:hover{
             cursor: pointer;
-            grid-template-columns: 70% 10% 18%;  
+            // ANIMATION DE LA GRILLE
+            grid-template-columns: 70% 10% 18%; 
+            // ANIMATION DU LOGO CHECK 
             .card-menu__check i{
                 transform: rotate(1turn);
             }
@@ -230,13 +229,16 @@
             font-size: 1rem;
             overflow: hidden;
             white-space: nowrap;
-            
         }
         & p{
+            // OVERFLOW ET WHITE-SPACE OBLIGATOIRE POUR FORCER
+            // LE TEXTE À CRÉER UNE "COLISION" AVEC SON CONTENEUR
             overflow: hidden;
             white-space: nowrap;
-            
             font-size: .85rem;
+
+            // ELLIPSIS NE FONCTIONNE PAS SI SON CONTENEUR OU LUI MÊME
+            // EST UN DISPLAY FLEX CAR LA COLISION NE SE FERA PAS
             text-overflow: ellipsis ;
         }
     }
@@ -252,7 +254,6 @@
         & i{
             color: #fff;
             font-size: 1.2rem;
-            // margin-left: 4vw;
             transform: rotate(0turn) ;
             transition: all .5s;
         }  
