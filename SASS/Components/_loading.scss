@@ -1,6 +1,6 @@
 
 .loading-spinner{
-    animation: loading-spinner-bg $anim-loading-duration forwards;
+    animation: loading-spinner-bg $anim-loading-duration both;
     color: $color-tertiary;
     position: fixed;
     width: 100%;
@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     & i{
-        animation: loading-spinning $anim-menu-duration backwards infinite;
+        animation: loading-spinning $anim-menu-duration both infinite;
         font-size: 8rem;
     }
 }

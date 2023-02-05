@@ -4,14 +4,12 @@ footer{
     background-color: $color-bg-footer; 
     color: #fff;
     padding: 1.5rem;
-    display: grid;
+    margin-top: auto;
+    // display: grid;
     @include pad{
         text-align: center;
     }
     
-    & p{
-        font-family: Shrikhand;
-    }
     & ul{
         list-style-type: none;
         padding-left: 0;

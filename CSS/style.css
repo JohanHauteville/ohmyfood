@@ -31,6 +31,9 @@
 }
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -44,6 +47,10 @@ a:visited {
 * {
   font-family: roboto;
   margin: 0;
+}
+
+.font-title {
+  font-family: Shrikhand;
 }
 
 .btn-purple {
@@ -98,7 +105,7 @@ a:visited {
 }
 
 .loading-spinner {
-  animation: loading-spinner-bg 3s forwards;
+  animation: loading-spinner-bg 3s both;
   color: #99E2D0;
   position: fixed;
   width: 100%;
@@ -110,7 +117,7 @@ a:visited {
   justify-content: center;
 }
 .loading-spinner i {
-  animation: loading-spinning 1s backwards infinite;
+  animation: loading-spinning 1s both infinite;
   font-size: 8rem;
 }
 
@@ -173,27 +180,27 @@ header img {
   margin-right: 20px;
 }
 
-.fct {
+.fonctionnement {
   padding: 3rem 2rem 2rem 2rem;
 }
-.fct h2 {
+.fonctionnement h2 {
   margin-bottom: 1.6rem;
 }
-.fct--bg-section {
+.fonctionnement--bg-section {
   background-color: #F8F7F7;
 }
-.fct__list {
+.fonctionnement__list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media screen and (min-width: 640px) {
-  .fct__list {
+  .fonctionnement__list {
     align-items: center;
   }
 }
 @media screen and (min-width: 992px) {
-  .fct__list {
+  .fonctionnement__list {
     flex-direction: row;
     justify-content: space-around;
     max-width: 70rem;
@@ -202,7 +209,7 @@ header img {
   }
 }
 
-.card-fct {
+.card-fonctionnement {
   display: flex;
   align-items: center;
   background-color: #F8F7F7;
@@ -214,16 +221,16 @@ header img {
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 @media screen and (min-width: 640px) {
-  .card-fct {
+  .card-fonctionnement {
     max-width: 25rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .card-fct {
+  .card-fonctionnement {
     max-width: 18rem;
   }
 }
-.card-fct__num {
+.card-fonctionnement__num {
   position: relative;
   right: 0.8rem;
   margin-right: 1.4rem;
@@ -233,58 +240,59 @@ header img {
   padding: 0.2rem 0.5rem;
   border-radius: 30px;
 }
-.card-fct__icon {
+.card-fonctionnement__icon {
   color: #9356DC;
   position: relative;
   right: 0.8rem;
   margin-right: 1.4rem;
 }
-.card-fct__txt {
+.card-fonctionnement__txt {
   position: relative;
   right: 0.8rem;
   margin-right: 1.4rem;
 }
-.card-fct:hover {
+.card-fonctionnement:hover {
   background-color: #eee7f4;
 }
 
-#rest {
+#restaurant {
   background-color: #F8F7F7;
   padding: 3rem 1.4rem 2rem 1.4rem;
+  height: 100%;
 }
-#rest h2 {
+#restaurant h2 {
   margin-bottom: 1.6rem;
 }
-#rest__list {
+#restaurant__list {
   display: grid;
   gap: 1rem;
   margin: 0 auto 3rem auto;
 }
 @media screen and (min-width: 640px) {
-  #rest__list {
+  #restaurant__list {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  #rest__list {
+  #restaurant__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1408px;
   }
 }
 
-.card-rest {
+.card-restaurant {
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  position: relative;
 }
-.card-rest__new {
+.card-restaurant__new {
   display: none;
 }
-.card-rest__new--actived {
-  float: right;
+.card-restaurant__new--actived {
   margin-left: -5.4rem;
   margin-top: 1rem;
   position: absolute;
@@ -294,19 +302,19 @@ header img {
   font-size: 0.8rem;
   display: inherit;
 }
-.card-rest__img {
+.card-restaurant__img {
   z-index: 1;
   width: 100%;
   height: 10rem;
   object-fit: cover;
 }
-.card-rest__cont-txt {
+.card-restaurant__cont-txt {
   float: left;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.card-rest__cont-txt__txt {
+.card-restaurant__cont-txt__txt {
   margin: 0;
   padding: 0.6rem 0.8rem 0.8rem 0.8rem;
   display: flex;
@@ -320,6 +328,7 @@ header img {
   border-radius: 40px 40px 0 0;
   margin-top: -3rem;
   padding: 1rem 1rem 1rem 1rem;
+  height: 100%;
 }
 .menu__top {
   display: flex;
@@ -339,7 +348,6 @@ header img {
   }
 }
 .menu__top h1 {
-  font-family: Shrikhand;
   font-size: 1.7rem;
 }
 .menu__grid {
@@ -461,15 +469,12 @@ footer {
   background-color: #353535;
   color: #fff;
   padding: 1.5rem;
-  display: grid;
+  margin-top: auto;
 }
 @media screen and (min-width: 640px) {
   footer {
     text-align: center;
   }
-}
-footer p {
-  font-family: Shrikhand;
 }
 footer ul {
   list-style-type: none;
