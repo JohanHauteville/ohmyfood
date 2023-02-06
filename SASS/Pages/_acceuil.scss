@@ -69,7 +69,8 @@
     height: 100%;
 
     & h2 {
-        margin-bottom: 1.6rem;
+        max-width: (map-get($breakpoints, pad)*2.2);
+        margin: auto auto 1.6rem auto;
     }
 
     &__list {
@@ -100,11 +101,9 @@
     //  ICONE NOUVEAU SUR LA CARD
     &__new {
         display: none;
-
         &--actived {
-            // float: right;
-            margin-left: -5.4rem;
-            margin-top: 1rem;
+            top: .8rem;
+            right: .8rem;
             position: absolute;
             padding: .3rem .7rem;
             background-color: $color-tertiary;
