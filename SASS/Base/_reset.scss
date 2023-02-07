@@ -16,4 +16,8 @@ a {
 }
 main{
     min-width: 0;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    
 }
