@@ -1,5 +1,6 @@
 .fonctionnement {
     @include section;
+    @include alignement-h2-section;
 
     &__list {
         display: flex;
@@ -67,12 +68,7 @@
     background-color: $color-bg-sections;
     padding: 3rem 1.4rem 2rem 1.4rem;
     height: 100%;
-
-    & h2 {
-        max-width: (map-get($breakpoints, pad)*2.2);
-        margin: auto auto 1.6rem auto;
-    }
-
+    @include alignement-h2-section;
     &__list {
         display: grid;
         gap: 1rem;

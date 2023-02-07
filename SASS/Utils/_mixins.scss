@@ -9,12 +9,16 @@
 }
 
 @mixin section{
-    padding: 3rem 2rem 2rem 2rem;
-    & h2{
-        margin-bottom: 1.6rem;
-    }
+    padding: 3rem 1.4rem 2rem 1.4rem;
     &--bg-section{
         background-color: $color-bg-sections;
+    }
+}
+
+@mixin alignement-h2-section{
+    & h2{
+        max-width: (map-get($breakpoints, pad)*2.2);
+        margin: auto auto 1.6rem auto;
     }
 }
 

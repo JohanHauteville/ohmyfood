@@ -49,6 +49,10 @@ a:visited {
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 .font-title {
   font-family: Shrikhand;
 }
@@ -181,13 +185,14 @@ header img {
 }
 
 .fonctionnement {
-  padding: 3rem 2rem 2rem 2rem;
-}
-.fonctionnement h2 {
-  margin-bottom: 1.6rem;
+  padding: 3rem 1.4rem 2rem 1.4rem;
 }
 .fonctionnement--bg-section {
   background-color: #F8F7F7;
+}
+.fonctionnement h2 {
+  max-width: 1408px;
+  margin: auto auto 1.6rem auto;
 }
 .fonctionnement__list {
   display: flex;
