@@ -28,9 +28,11 @@
             margin-right: auto;
         }
         @include desktop{
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3,1fr);
             max-width: 74rem;
             column-gap: 3vw;
+            
+            
         }
     }
     
@@ -38,6 +40,9 @@
 
 .menu-section{
     margin: 1.5rem 0 0 0;
+    @include desktop{
+        // max-width: 90%;
+    }
     & h2{
         margin-bottom: 1rem;
         display: block;

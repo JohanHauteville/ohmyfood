@@ -368,7 +368,7 @@ header img {
 }
 @media screen and (min-width: 992px) {
   .menu__grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 74rem;
     column-gap: 3vw;
   }
