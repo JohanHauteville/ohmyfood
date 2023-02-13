@@ -1,5 +1,11 @@
 
-
+.ctn-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem auto;
+}
 
 .btn-purple{
     display: block;
@@ -45,10 +51,3 @@
     }
 }
 
-.ctn-btn{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5rem auto;
-}

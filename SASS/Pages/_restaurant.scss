@@ -3,7 +3,6 @@
     border-radius: 40px 40px 0 0;
     margin-top: -3rem;
     padding: 1rem 1rem 1rem 1rem;
-    // height: 54vh;
     flex-grow: 2;
     &__top{
         @include pad{
@@ -23,7 +22,7 @@
     }
     &__grid{
         display: grid;
-        
+        grid-template-columns: minmax(0, 1fr);
         @include pad{
             max-width: 40rem;
             margin-left: auto;
@@ -41,7 +40,6 @@
 .menu-section{
     margin: 1.5rem 0 0 0;
     @include desktop{
-        // max-width: 90%;
     }
     & h2{
         margin-bottom: 1rem;
