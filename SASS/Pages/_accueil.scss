@@ -31,6 +31,7 @@
     width: 95%;
     margin-bottom: 2rem;
     transition: background-color 200ms ease-in-out;
+    cursor: pointer;
     @include box-shadow;
 
     @include pad {
