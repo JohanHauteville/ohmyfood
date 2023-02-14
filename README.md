@@ -5,38 +5,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="images/logo/ohmyfood.png" alt="Logo" width="80" height="80">
+    <img src="images/logo/ohmyfood.png" alt="Logo" width="392" height="68">
     <h3 align="center">Projet Ohmyfood Paris !</h3>
-    <p align="center">Un projet développé dans le cadre de la formation OpenClassroom</p>
+    <p align="center">Projet 3 de la formation OpenClassroom</p>
+    <p align="center">Dynamisez une page web avec des animations CSS</p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<!-- <details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details> -->
 
 
 
@@ -45,14 +19,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Ce projet a été réalisé dans le cadre de la formation de développeur d'application d'OpenClassroom. Le but de ce projet est la création d'animation CSS ainsi que la mise en place du pré-processeur SASS.
-
-La mise en place du pattern 7-1 a aussi été réalisé.
+Ce projet a été réalisé dans le cadre de la formation de développeur d'application d'OpenClassroom.
 
 Le but du site internet est de proposer aux usagers, différents menus de restaurants luxueux en fonction de la position de celui-ci.
-Ainsi l'utilisateur, aprés avoir sélectionner son restaurant, pourra établir son menu en fonction des offres proposés.
+Ainsi l'utilisateur, aprés avoir sélectionné son restaurant, pourra établir son menu en fonction des offres proposés.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -60,21 +32,26 @@ Ainsi l'utilisateur, aprés avoir sélectionner son restaurant, pourra établir 
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Sass][Next.js]][Next-url]
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 
-<!-- USAGE EXAMPLES -->
+## Identité graphique
+Polices
+<ul>
+<li>Logo et titre: Shrikand</li>
+<li>Texte: Roboto</li>
+</ul>
+
+Couleurs
+<ul>
+  <li>Primaire: #9356DC</li>
+  <li>Secondaire: #FF79DA</li>
+  <li>Tertiaire: #99E2D0</li>
+</ul>
+
+
 
 
 <!-- ROADMAP -->
